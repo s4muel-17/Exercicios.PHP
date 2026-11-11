@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somar</title>
+    <title>DIvidir</title>
 </head>
 <body>
     <h1>Informe os valores que deseja Dividir: </h1>
