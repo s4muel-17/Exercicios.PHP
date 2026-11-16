@@ -121,14 +121,47 @@
             return $this->resultado;
         }//fim do método Calcular Volume do Retângulo
 
-        public function calcularQuadradoECubo(float $num1){
-            $quadrado = pow($num1, 2);
-            $cubo = pow($num1, 3);
+        public function calcularQuadrado(int $num1){
+            $this->resultado = pow($num1, 2);
+            return $this->resultado;
+        }//fim do método Calcular Quadrado
 
-            $this->resultado = "Quadrado: {$quadrado} | Cubo: {$cubo}";
-             return $this->resultado;
-        }//fim do método Calcular Quadrado e o Cubo
+        public function calcularCubo(int $num1){
+            $this->resultado = pow($num1,3);
+            return $this->resultado;
+        }//fim do Calcular Cubo
 
+        public function adicionarImposto(float $preco){
+            $this->resultado = $preco * 0.18;
+            return $this->resultado;
+        }//fim do adicionar imposto
+
+        public function velocidadeMedia(float $distancia, float $tempo){
+            $this->resultado = $distancia / $tempo;
+            return $this->resultado;
+        }//fim da velocidade média
+
+        public function salarioMensal(int $salarioPorHora, int $horasTrabalhadas, int $diasTrabalhados){
+            $salarioMensal = $salarioPorHora * $horasTrabalhadas;
+            $this->resultado = $salarioMensal * $diasTrabalhados;
+            return $this->resultado;
+        }//fim do salario mensal
+
+        public function idadeParaDias(int $dtnascimento){
+            $this->resultado = $dtnascimento * 365;
+            return $this->resultado;
+        }//fim do idade para dias
+
+        public function idadeRestante(int $dtnascimento){
+            $this->resultado = 100 - $dtnascimento;
+            return $this->resultado;
+        }//fim do idade restante
+
+        public function somaEMedia(float $num1, float $num2, float $num3){
+             $soma = $num1 + $num2 + $num3;
+             $media = $soma / 3;
+            return "Soma: $soma <br> Média: $media";
+        }//fim do soma e média
     
         public function decimalBinario(float $decimal){
         $resultado = "";
