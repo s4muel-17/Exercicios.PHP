@@ -23,7 +23,7 @@
     <button><a href="telas/celsiusForFahrenheit.php">Converter Celsius para Fahrenheit</a></button><br>
     <button><a href="telas/calcularDesconto.php">Calculando Desconto de 10%</a></button><br>
     <button><a href="telas/calcularIdadeEmMeses.php">Calculando a Idade em Meses</a></button><br>
-    <button><a href="telas/numParOuImpar.php">Verificando se um número é Par ou Ímpar</a></button><br>
+    <button><a href="telas/numParOuImpar.php">Verificando se um Número é Par ou Ímpar</a></button><br>
     <button><a href="telas/calcularAreaTriangulo.php">Calculando a Área de um Triângulo</a></button><br>
     <button><a href="telas/calcularVolumeRetangulo.php">Calculando o Volume de um Retângulo</a></button><br>
     <button><a href="telas/calcularQuadradoECubo.php">Calculando o Quadrado e o Cubo</a></button><br>
@@ -31,8 +31,15 @@
     <button><a href="telas/velocidadeMedia.php">Calculando a Velocidade Média</a></button><br> 
     <button><a href="telas/salarioMensal.php">Calculando o Salário Mensal</a></button><br> 
     <button><a href="telas/idadeParaDias.php">Converter a Idade para Dias</a></button><br> 
-    <button><a href="telas/somaEMedia.php">Mostrando a Soma e a Média</a></button><br> 
+    <button><a href="telas/somaEMedia.php">Mostrando a Soma e a Média</a></button><br>
+    <button><a href="telas/verificarNum.php">Verificar se um Número é positivo, negativo ou 0</a></button><br>  
     <button><a href="telas/binario.php">Mostrando um valor em binário</a></button><br> 
+    <button><a href="telas/tabuada.php">Mostrar a tabuada de qualquer Número</a></button><br> 
+    <button><a href="telas/contagemCrescente.php">Contagem Crescente de um determinado Número</a></button><br> 
+    <button><a href="telas/contagemRegressiva.php">Contagem Regressiva de um determinado Número</a></button><br> 
+    <button><a href="telas/numSomaInt.php">Somar Números de 1 até N</a></button><br> 
+    <button><a href="telas/multiploDe7.php">Verificar os Múltiplos de um Número</a></button><br>
+    <button><a href="telas/num20Par.php">Contar quantos números são pares</a></button><br> 
     <button><a href="telas/hexadecimal.php">Mostrando em Hexadecimal</a></button><br>
 </body>
 </html>

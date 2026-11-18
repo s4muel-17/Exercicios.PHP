@@ -7,11 +7,11 @@
     $resultado = "";
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular a área de um círculo com base no Raio</title>
+    <title>ÁreaRaio</title>
 </head>
 <body>
     <h1>Informe o valor do raio: </h1>

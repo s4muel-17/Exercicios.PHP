@@ -162,7 +162,90 @@
              $media = $soma / 3;
             return "Soma: $soma <br> Média: $media";
         }//fim do soma e média
+
+        public function verificarNum(float $num1){
+            if($num1 > 0){
+                return  "Positivo!";
+            }
+            if($num1 < 0){
+                return "Negativo!";
+            }
+                return "Neutro";
+        }//fim do método verificar num
     
+         public function tabuada(float $num){
+            $msg = "";
+            for($i = 0;$i <= 10;$i++){
+                $msg .= "<br>$num * $i = ".($num * $i);
+            }//fim do for
+            return $msg;
+        }//fim do método tabuada
+
+        public function contagemCrescente(int $num1){
+            for($i = 0;$i <= $num1;$i++){
+                echo $i . "<br>";
+            }
+        }//fim do método contagem crescente
+
+        public function contagemRegressiva(int $num1){
+            for($i = $num1;$i >= 0;$i--){
+                echo $i . "<br>";
+            }
+        }//fim do método contagem regressiva
+
+        public function numSomaInt(int $n){
+            $soma = 0;
+
+            for($i = 1; $i <= $n; $i++){
+                $soma += $i;
+        }
+            return $soma;
+        }//fim do método numSomaInt
+
+        public function multiploDe7(int $num1){
+            $resultado = "";
+            for($i = 0; $i <= 100; $i++){
+                if($i % $num1 == 0 ){
+                    $resultado .= $i .", ";
+                }
+            }
+            return $resultado;
+        }//fim do método multiploDe7
+
+        public function num20Par(int $num, int $num2, int $num3, int $num4, int $num5, int $num6, int $num7, int $num8, int $num9, int $num10, int $num11, int $num12, int $num13, int $num14, int $num15, int $num16, int $num17, int $num18, int $num19, int $num20){
+            $contarPar = 0;
+
+            for($i = 1; $i <= 20; $i++){
+
+            switch($i){
+                case 1: $valor = $num; break;
+                case 2: $valor = $num2; break;
+                case 3: $valor = $num3; break;
+                case 4: $valor = $num4; break;
+                case 5: $valor = $num5; break;
+                case 6: $valor = $num6; break;
+                case 7: $valor = $num7; break;
+                case 8: $valor = $num8; break;
+                case 9: $valor = $num9; break;
+                case 10: $valor = $num10; break;
+                case 11: $valor = $num11; break;
+                case 12: $valor = $num12; break;
+                case 13: $valor = $num13; break;
+                case 14: $valor = $num14; break;
+                case 15: $valor = $num15; break;
+                case 16: $valor = $num16; break;
+                case 17: $valor = $num17; break;
+                case 18: $valor = $num18; break;
+                case 19: $valor = $num19; break;
+                case 20: $valor = $num20; break;
+            }
+            if($valor % 2 == 0){
+                $contarPar++;
+            }
+            }
+        return $contarPar;
+        }//fim do método num20Par
+
         public function decimalBinario(float $decimal){
         $resultado = "";
         while($decimal / 2 != 0){
