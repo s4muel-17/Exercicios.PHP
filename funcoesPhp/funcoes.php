@@ -218,26 +218,66 @@
             for($i = 1; $i <= 20; $i++){
 
             switch($i){
-                case 1: $valor = $num; break;
-                case 2: $valor = $num2; break;
-                case 3: $valor = $num3; break;
-                case 4: $valor = $num4; break;
-                case 5: $valor = $num5; break;
-                case 6: $valor = $num6; break;
-                case 7: $valor = $num7; break;
-                case 8: $valor = $num8; break;
-                case 9: $valor = $num9; break;
-                case 10: $valor = $num10; break;
-                case 11: $valor = $num11; break;
-                case 12: $valor = $num12; break;
-                case 13: $valor = $num13; break;
-                case 14: $valor = $num14; break;
-                case 15: $valor = $num15; break;
-                case 16: $valor = $num16; break;
-                case 17: $valor = $num17; break;
-                case 18: $valor = $num18; break;
-                case 19: $valor = $num19; break;
-                case 20: $valor = $num20; break;
+                case 1: 
+                    $valor = $num; 
+                break;
+                case 2: 
+                    $valor = $num2; 
+                break;
+                case 3: 
+                    $valor = $num3; 
+                break;
+                case 4: 
+                    $valor = $num4; 
+                break;
+                case 5:
+                     $valor = $num5; 
+                break;
+                case 6: 
+                    $valor = $num6; 
+                break;
+                case 7: 
+                    $valor = $num7; 
+                break;
+                case 8:
+                     $valor = $num8; 
+                break;
+                case 9: 
+                    $valor = $num9; 
+                break;
+                case 10: 
+                    $valor = $num10; 
+                break;
+                case 11:
+                     $valor = $num11; 
+                break;
+                case 12: 
+                    $valor = $num12; 
+                break;
+                case 13: 
+                    $valor = $num13; 
+                break;
+                case 14: 
+                    $valor = $num14; 
+                break;
+                case 15:
+                    $valor = $num15; 
+                break;
+                case 16: 
+                    $valor = $num16;
+                break;
+                case 17: 
+                    $valor = $num17; 
+                break;
+                case 18: 
+                    $valor = $num18; 
+                break;
+                case 19: 
+                    $valor = $num19; 
+                break;
+                case 20: 
+                    $valor = $num20; 
+                break;
             }
             if($valor % 2 == 0){
                 $contarPar++;
@@ -245,6 +285,35 @@
             }
         return $contarPar;
         }//fim do método num20Par
+
+        public function mediaNotas(float $nota){
+            $soma = 0;
+
+            for($i = 1; $i <= 8; $i++){
+                $soma += $nota;
+            }
+                $media = $soma / 8;
+
+            if($media >= 7){
+                return "Aprovado! Média: " . $media;
+        }else{
+            return "Reprovado! Média: " . $media;
+            }
+        }//fim do método mediaNotas
+
+        public function mediaTemperatura(float $temperatura){
+            $soma = 0;
+
+            for($i = 1; $i <= 7; $i++){
+                $soma += $temperatura;
+            }
+                $media = $soma / 7;
+
+            if($media > 30){
+                return "A média das temperaturas é: " . $media;
+            }
+                return "A média não ultrapassou 30 graus. Média: " . $media;
+        }//fim do método médiaTemperatura
 
         public function decimalBinario(float $decimal){
         $resultado = "";
@@ -254,6 +323,20 @@
         }//fim do while
         return strrev($resultado);//Mostrando da direita para esquerda
         }//fim do Decimal Binário
+
+        public function acumuladorValores(int $num1, int $num2){
+        $soma = 0;
+
+        while($soma <= 200){
+            $soma = $num1 + $num2;
+
+            if($soma <= 200){
+            return "A soma ainda não é maior que 200!";
+            }
+        }
+
+        return "A soma dos valores é: " . $soma;
+        }//fim do método acumuladorValores
 
         public function decimalHexadecimal(float $decimal){
             $resto = 0;
@@ -289,6 +372,28 @@
             return strrev($resultado);
         }//fim do Decimal Hexadecimal
 
+        public function validarIdade(int $idade){
+        while($idade < 0 or $idade > 120){
+            return "Idade inválida! Informe novamente.";
+        }
+
+            return "Vc tem " .$idade ." anos";
+        }//fim do método validarIdade
+
+        public function contarNumPositivo(int $num, int $contPositivo){
+           $contPositivo = 0;
+
+        while($num >= 0){
+            if($num > 0){
+                $contPositivo++;
+            }
+            $num = $num2;
+            $num2 = $num3;
+            $num3 = $num4;
+            $num4 = -1;
+        }
+        return "Quantidade de números positivos: " . $contPositivo;
+        }//fim do método contarNumPositivo
 
         public function verificarSenha(string $senha){
             $senhaBD = "1234";
@@ -301,7 +406,7 @@
                 }
             }while($senhaBD != $senha);
             return $msg;
-        }//fim do método
+        }//fim do método verificarSenha
 
     }//fim da classe
 ?>
